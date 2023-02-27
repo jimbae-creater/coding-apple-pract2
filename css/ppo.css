@@ -67,11 +67,6 @@ span {
     color: #222;
 }
 
-.btn-group{
-    display: flex;
-    justify-content: center;
-}
-
 .btn-2{
     width: 64px; height: 64px; border-radius: 999px;
     background-color: #4E61C0;
@@ -116,13 +111,18 @@ span {
     justify-content: space-between;
 }
 
-.hero-test{
+.hero-text{
     width: 440px; height: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+}
+
+.btn-group{
+    display: flex;
+    justify-content:flex-start;
 }
 
 .img-box{
@@ -143,6 +143,12 @@ span {
     padding: 48px 0px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+
+.slogun .btn-group{
+    display: flex;
     justify-content: center;
 }
 
@@ -180,6 +186,11 @@ span {
 .services-container >h5 {text-align: center; margin-bottom: 32px;
 }
 
+.services-box {
+    display: flex;
+    justify-content: center;
+}
+
 .services {
     display: flex;
     justify-content: center;
@@ -188,6 +199,10 @@ span {
 .icon-cmp{
     max-width: 216px; 
     margin: 0px 12px;
+}
+
+.icon-cmp:hover .iconbox{
+    outline: solid 10px white;
 }
 
 .iconbox-container{
@@ -202,6 +217,8 @@ span {
     justify-content: center;
     align-items: center;
     margin-bottom: 16px;
+    outline: solid 0px  white;
+    transition: 0.8s;
 }
 
 .iconbox i {
@@ -293,3 +310,96 @@ span {
     max-width: 1024px;
     text-align: center;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    .hero-bg {
+        height: 523px;
+    }
+    
+    .hero {
+        /* max-width: 1024px; height: 100%;
+        margin: auto; */
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .hero-text{
+        width: 100%;
+        padding: 48px 24px;
+        margin: auto;
+        box-sizing: border-box;
+    
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    
+    }
+
+
+    .btn-group{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-text h3{
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    .hero-text p{
+        text-align: center;
+    }
+
+    .img-box{
+        width: 200px;
+        display: flex;
+    }
+    
+    .iphone{
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .slogun{
+        max-width: 1024px;
+        margin: auto;
+        padding: 48px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .services { 
+        flex-direction: column;
+    }
+
+    .icon-cmp{
+        max-width: 216px; 
+        margin: 24px 12px;
+    }
+
+    .services-container >h5 {text-align: center; margin-bottom: 8px;
+    }
+
+    .ppo-card{
+        width: 100%; height: 100%;
+        position: relative;
+    }
+
+    .ppo-flexbox{ 
+        flex-direction: column;
+        max-height: 100%;
+    }
+
+    .ppo-ani{
+        width: 100%; height: 100%;
+    }
+
+}
+
