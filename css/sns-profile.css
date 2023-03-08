@@ -1,0 +1,48 @@
+.body {
+    background-color: #E9ECEF;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.grey50 {
+    color: #F8F9FA;
+}
+
+.grey100 {
+    color:#F1F3F5 ;
+}
+
+.grey200 {
+    color: #E9ECEF;
+}
+
+.grey300 {
+    color: #DEE2E6;
+}
+
+.grey400 {
+    color:#CED4DA ;
+}
+
+.grey500 {
+    color: #ADB5BD;
+}
+
+.grey600 {
+    color: #868E96;
+}
+
+.grey700 {
+    color: #495057;
+}
+
+.grey800 {
+    color: #343A40;
+}
+
+.grey900 {
+    color: #212529;
+}
