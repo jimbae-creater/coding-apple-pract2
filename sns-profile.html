@@ -8,65 +8,52 @@
     <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <title>Document</title>
+    <title>bootstrap Working N-O-W</title>
 </head>
-
-<!-- 바디 -->
-<body class="body m-3">
-    <!-- 프로필 영역 -->
-    <div class="container p-4 shadow">
-        <!-- 핵심 프로필 영역 -->
-        <div class="d-flex align-items-center">
-            <img src="img/profile-pic.png" width="120px">
-            <div class="ms-4">
-                <h4 class="h4 m-0">Toil Gist</h4>
-                <p class="fs-6 m-0 mb-1">Producer</p>
-                <div class="mb-3">
-                    <i class="fas fa-map-marker-alt text-primary"></i>
-                    <span class="fs-6 text-primary">서울시 마포구</span>
+<body class="body-area d-grid gap-4 my-4">
+    <div class="common-box">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <img src="img/author.png">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h4>Gordon Ramsay</h4>
+                            <p class="m-0">Head Chef</p>
+                            <p class="m-0">Seoul Gang-nam</p>
+                        <button class="btn btn-primary mt-2">연락하기</button>
+                    </div>
                 </div>
-                <button type="button" class="btn btn-primary">Contact</button>
-            </div>
-        </div>
-        <!-- 상세 프로필 영역 -->
-        <div class="d-grid gap-2 mt-4 ">
-            <!-- 이놈들 왜 삐져나오는지 모르겠는데 이거 해결해야함. -->
-            <div class="row">
-                <h6 class="col-4 m-0 p-0 grey600">location</h6>
-                <p class="col-8 m-0 p-0">서울 마포구</p>
             </div>
 
-            <div class="row">
-                <h6 class="col-4 m-0 p-0 grey600">Age</h6>
-                <p class="col-8 m-0 p-0">27</p>
-            </div>
-
-            <div class="row">
-                <h6 class="col-4 m-0 p-0 grey600">Experience</h6>
-                <p class="col-8 m-0 p-0">Newbie</p>
-            </div>
-
-            <div class="row">
-                <h6 class="col-4 m-0 p-0 grey600">School</h6>
-                <p class="col-8 m-0 p-0">기안대학 방송통신과</p>
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="row">
+                    <div class="col-4"> <p class=" mb-2">Location</p> </div> 
+                    <div class="col-8"> <p class=" mb-2">서울 근무</p> </div> 
+                    <div class="col-4"> <p class=" mb-2">Age</p> </div> 
+                    <div class="col-8"> <p class=" mb-2">많음</p> </div>
+                    <div class="col-4"> <p class=" mb-2">Experience</p> </div> 
+                    <div class="col-8"> <p class=" mb-2">신입</p> </div> 
+                    <div class="col-4"> <p class=" mb-0">School</p> </div> 
+                    <div class="col-8"> <p class=" mb-0">예일대 요리조리과</p> </div>
+                  </div>
             </div>
         </div>
     </div>
 
-<!-- 탭바 영역 -->
-    <ul class="nav nav-tabs mt-4">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        </ul>
-
-
-
+    <div class="row">
+        <div class="col-md-3">
+          <div class="common-box">왼쪽박스</div>
+        </div>
+        <div class="col-md-6">
+          <div class="common-box">가운데박스</div>
+        </div>
+        <div class="col-md-3">
+          <div class="common-box">왼쪽박스</div>
+        </div>
+      </div>
+    
     <script src="css/bootstrap.bundle.js"></script>
 </body>
-
 </html>

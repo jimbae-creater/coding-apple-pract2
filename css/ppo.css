@@ -1,3 +1,18 @@
+.container22 {
+    display: flex;
+    flex-direction: column;
+    height:400px
+  }
+  
+  .header22 {
+    height: 80px; /* 헤더의 높이 */
+  }
+  
+  .content22 {
+    flex: 1; /* 남은 공간을 모두 차지 */
+    height: calc(100% - 80px); /* 헤더의 높이를 빼준 값으로 설정 */
+  }
+
 /* typography justify */
 
 h3 {
