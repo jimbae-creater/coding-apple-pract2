@@ -15,10 +15,10 @@ div{
 }
 
 .gridborn{
-    width: 1224px;
+    max-width: 1224px;
     margin: auto;
     background-color: #fff;
-    height: 400px;
+    padding: 48px 0px;
 }
 
 // LIST Exercise
@@ -90,6 +90,154 @@ $ab200 : #FFECB3;
 
 .alert-warning{@include alert-base($ab200, $ab500)}
 
+// 컬럼
+.row {
+    padding: 0px 12px ;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $tc500;
+    
+    div{
+        font-size: 24px;
+    }
+}
+
+
+
+@mixin col($col) {
+    width: $col;
+    padding: 0px 12px;
+    margin: 24px 0px;
+    border: 1px solid $sc500;
+    background-color: $tc200;
+}
+
+@media (min-width: 990px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+      float: left;
+    }
+  
+    .col-md-12 {
+      width: 100%;
+    }
+  
+    .col-md-11 {
+      width: 91.66667%;
+    }
+  
+    .col-md-10 {
+      width: 83.33333%;
+    }
+  
+    .col-md-9 {
+      width: 75%;
+    }
+  
+    .col-md-8 {
+      width: 66.66667%;
+    }
+  
+    .col-md-7 {
+      width: 58.33333%;
+    }
+  
+    .col-md-6 {
+      width: 50%;
+    }
+  
+    .col-md-5 {
+      width: 41.66667%;
+    }
+  
+    .col-md-4 {
+      width: 33.33333%;
+    }
+  
+    .col-md-3 {
+      width: 25%;
+    }
+  
+    .col-md-2 {
+      width: 16.66667%;
+    }
+  
+    .col-md-1 {
+      width: 8.33333%;
+    }
+  }
+
+@media (min-width: 1200px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+      float: left;
+    }
+  
+    .col-lg-12 {
+      width: 100%;
+    }
+  
+    .col-lg-11 {
+      width: 91.66667%;
+    }
+  
+    .col-lg-10 {
+      width: 83.33333%;
+    }
+  
+    .col-lg-9 {
+      width: 75%;
+    }
+  
+    .col-lg-8 {
+      width: 66.66667%;
+    }
+  
+    .col-lg-7 {
+      width: 58.33333%;
+    }
+  
+    .col-lg-6 {
+      width: 50%;
+    }
+  
+    .col-lg-5 {
+      width: 41.66667%;
+    }
+  
+    .col-lg-4 {
+      width: 33.33333%;
+    }
+  
+    .col-lg-3 {
+      width: 25%;
+    }
+  
+    .col-lg-2 {
+      width: 16.66667%;
+    }
+  
+    .col-lg-1 {
+      width: 8.33333%;
+    }
+  }
+
+//   .col-12 {@include col(100%)}
+//   .col-11 {@include col(91.66667%)}
+//   .col-10 {@include col(83.33333%)}
+//   .col-9 {@include col(75%)}
+//   .col-8 {@include col(66.66667%)}
+//   .col-7 {@include col(58.33333%)}
+//   .col-6 {@include col(50%)}
+//   .col-5 {@include col(41.66667%)}
+//   .col-4 {@include col(33.33333%)}
+//   .col-3 {@include col(25%)}
+//   .col-2 {@include col(16.66667%)}
+//   .col-1 {@include col(8.33333%)}
+  
+
+
+
+
 // btn
 
 %btn{
@@ -112,4 +260,14 @@ $ab200 : #FFECB3;
 .btn-purple{
     @extend %btn;
     background: purple;
+}
+
+.momma{
+    .sibling{}
+        .child1, p {
+            color: $gr500;
+        }
+        .child3 {
+            color: #673AB7;
+        }
 }
