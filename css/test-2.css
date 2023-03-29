@@ -1,0 +1,58 @@
+.qwer {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px ;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: 
+    "ㅂㅂ ㅂㅂ ㅂㅂ ㅂㅂ"
+    "ㅈㅈ ㄷㄷ ㄷㄷ ."
+    "ㅈㅈ ㄷㄷ ㄷㄷ ."
+    ;
+}
+img {
+    display: block;
+}
+.qwer div{
+    border: 1px solid magenta;
+}
+
+.grid-nav{grid-area: ㅂㅂ;}
+.grid-side{grid-area: ㅈㅈ;}
+.grid-body{grid-area: ㄷㄷ;}
+
+/*  */
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.grid-container2 img{
+    width: 100%;
+}
+
+.king{
+    grid-column: 1 /3 ;
+    grid-row: 1 /3 ;
+}
+
+@media (max-width: 800px) {
+    .qwer {
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 100px 100px 100px ;
+        grid-template-areas: 
+        "ㅂㅂ ㅂㅂ "
+        "ㅈㅈ ㅈㅈ "
+        "ㄷㄷ ㄷㄷ "
+        ;
+    }
+    
+    .grid-container2{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;}
+
+    .king{
+        grid-column: 1 /2 ;
+        grid-row: 1 /2 ;
+    }
+  }

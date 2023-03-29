@@ -262,6 +262,30 @@ $ab200 : #FFECB3;
     background: purple;
 }
 
+
+.skewbtn {
+    border: none;
+    background: skyblue;
+    color: white;
+    padding: 16px 24px;
+    font-size: 15px;
+    margin: 40px auto;
+    border-radius: 8px;
+
+    :hover {
+        color:#673AB7;
+        animation-name: skewbtn1;
+    }
+}
+
+@keyframes skewbtn1 {
+    0% {text-transform: rotate (-90deg);}
+
+    50% {text-transform: rotate (90deg);}
+
+    100% {text-transform: rotate (-90deg);}
+}
+
 .momma{
     .sibling{}
         .child1, p {

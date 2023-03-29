@@ -8,9 +8,62 @@ div {
 
 .area {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #f2f2f2;
 }
+
+.sidebar{
+  width: 280px;
+  height: 100vh;
+  background-color: #222;
+  position:fixed;
+  z-index: 3;
+  padding: 24px;
+  left: -140px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar:hover{
+  animation-duration: 2s;
+  transform: translate(+140px);
+  transition: 0.4s;
+}
+
+.sidebar .header{
+  font-size: 40px;
+  font-weight: 100;
+  color: white;
+  transform: translateX(+140px);
+  transform-origin: center center;
+}
+
+.sidebar:hover .header{
+  transform: translateX(+70px);
+  transition: 1s;
+}
+
+.sidebar .item{
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  transform-origin: center center;
+}
+
+.sidebar:hover .item{
+  animation-name: tmrtmr;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes tmrtmr{
+  0% {transform: translateX(0px);}
+  50% {transform: translateX(+180px) skewX(-45deg);}
+  100% {transform: translateX(+100px);}
+
+}
+
 
 .gridborn {
   max-width: 1224px;
@@ -214,6 +267,95 @@ li {
 .btn-purple {
   background: purple;
 }
+
+.skew-btn {
+  border: none;
+  background: skyblue;
+  color: white;
+  padding: 16px 24px;
+  font-size: 15px;
+  margin: 40px auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.skew-btn:hover {
+  animation-name: qwerqwer;
+  animation-duration : 1s;
+}
+
+@keyframes qwerqwer {
+  0% {
+    transform: translateX(100px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+.skskchwap{
+  border: none;
+  background: orange;
+  color: white;
+  padding: 8px 16px;
+  font-size: 24px;
+  margin: 40px auto;
+  border-radius: 6px 10px 16px 26px;
+  display: block;
+}
+
+.skskchwap:hover {
+  animation-name: skskchwap;
+  animation-duration : 1.4s;
+}
+
+@keyframes 움찔움찔{
+  0% {
+    transform : translateX(0px); /* 애니메이션이 0%만큼 동작시 */
+  }
+  50% {
+    transform : translateX(-20px); /* 애니메이션이 50%만큼 동작시 */
+  }
+  100% {
+    transform : translateX(20px); /* 애니메이션이 100%만큼 동작시 */
+  }
+}
+
+@keyframes skskchwap{
+  0% {transform :rotate(0deg) scale(100%) }
+  20% {transform :rotate(-10deg) scale(100%) }
+  60% {transform :rotate(45deg) scale(120%) }
+  80% {transform :rotate(-10deg) scale(100%) }
+  100% {transform :rotate(0deg) scale(100%) }
+}
+
+.ani-button {
+  padding: 15px 20px;
+  font-size: 20px;
+  background: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 30px auto;
+}
+
+.ani-button:hover {
+  animation-name: shake;
+  animation-duration: 1s;
+  transform-origin: top right;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg)}
+  25% { transform: rotate(-8deg)}
+  50% { transform: rotate(8deg)}
+  75% { transform: rotate(-8deg)}
+  100% { transform: rotate(0deg)}
+} 
 
 .momma .child1, .momma p {
   color: #8BC34A;
